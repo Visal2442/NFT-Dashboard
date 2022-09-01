@@ -390,6 +390,7 @@ main{
     border-radius: 20px;
 }
 
+
 @media(max-width:450px){
     body{
         height: 50vh;
@@ -399,6 +400,8 @@ main{
                             "sidebar-left sidebar-left sidebar-left sidebar-left";
         grid-template-rows: auto auto auto auto;
     }
+
+    
     /* __________________Sidebar-left______________ */
     .sidebar-left{
         grid-template-columns: auto;
@@ -450,7 +453,9 @@ main{
     .profile i{
         display: none;
     }
-            /* ______________Main________________________ */
+
+    
+    /* ______________Main________________________ */
     main{
         grid-area: main;
         padding: 0 20px;
@@ -487,6 +492,8 @@ main{
         margin-bottom: 7px;
     }
 
+   
+   
     /* __________________Sidebar_right_________________ */
     .sidebar-right{
         grid-template-rows: auto auto auto;
