@@ -38,7 +38,6 @@ button,
 .left-top h4,
 .left-center h4{
     text-transform: uppercase;
-    
 }
 .left-top span,
 .left-center span{
@@ -129,7 +128,6 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* margin-top: 5px; */
 }
 .header-botton,
 .type-collection{
@@ -209,7 +207,6 @@ main{
 .card img{
     border-radius: 15px;
 }
-
 .card-detail{
     display: flex;
     flex-direction: column;
@@ -229,7 +226,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 10px 0;
+    margin: 30px 5px 10px 5px;
 }
 .day{
     background: #ffffff;
@@ -312,9 +309,6 @@ main{
     text-transform: uppercase;
 }
 .balance{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
 }
 .right-center{
@@ -322,9 +316,6 @@ main{
     margin-top: 25px;
 }
 .header-right-center{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 15px 0;
 }
 .card-right-center{
@@ -335,7 +326,9 @@ main{
     border-radius: 15px;
 }
 .trending-profle,
-.right-bottom-top{
+.right-bottom-top,
+.header-right-center,
+.balance{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -343,7 +336,8 @@ main{
 .trending-profle span{
     font-size: small;
 }
-.trending-left{
+.trending-left,
+.right-bottom-profile{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -364,12 +358,6 @@ main{
     border-radius: 20px;
     padding: 15px;
     margin-top: 11px;
-    /* margin-bottom: 30px; */
-}
-.right-bottom-profile{
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 .right-bottom-name span{
     font-size: small;
@@ -380,7 +368,7 @@ main{
     gap: 20px;
 }
 .right-bottom-center img{
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .card-right-bottom{
     background: gainsboro;
@@ -400,5 +388,127 @@ main{
     bottom: 0;
     margin: 10px;
     border-radius: 20px;
+}
+
+@media(max-width:450px){
+    body{
+        height: 50vh;
+        grid-template-areas:"nav nav nav nav"
+                            "main main main main"
+                            "sidebar-right sidebar-right sidebar-right sidebar-right"
+                            "sidebar-left sidebar-left sidebar-left sidebar-left";
+        grid-template-rows: auto auto auto auto;
+    }
+    /* __________________Sidebar-left______________ */
+    .sidebar-left{
+        grid-template-columns: auto;
+        grid-template-rows: none;
+        margin: 0;
+    }
+    .left-top img,
+    .left-bottom img{
+        display: none;
+    }
+    .left-center{
+        flex-direction: row;
+        margin-left: 12px;
+        gap: 6%;
+    }
+    .left-center i{
+        font-size: 20px;
+    }
+    .nft h4,
+    .nft span,
+    .group-icon span,
+    .left-center h4{
+        display: none;
+    }
+    /* ____________Navigation___________________ */
+    nav{
+        margin: 15px 15px 0 5px;
+    }
+    input[type="date"],
+    input[type="time"]{
+        display: none;
+    }
+    input[type="search"]{
+        width: 190px;
+        padding-left: 10px;
+    }
+    .creates{
+        font-size: smaller;
+        width: 120px;
+    }
+    .user{
+        border-radius: 20px;
+        margin-right: 0;
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+    }
+    .profile i{
+        display: none;
+    }
+            /* ______________Main________________________ */
+    main{
+        grid-area: main;
+        padding: 0 20px;
+        margin-top: 25px;
+    }
+    .main-top{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header-botton,
+    .type-collection{
+        font-size: smaller;
+    }
+    .type-collection .picture,
+    .type-collection .art,
+    .type-collection .trending{
+        display: none;
+    }
+    .button span{
+        margin-left: 5px;
+    }
+    .card-container{
+        grid-template-columns: auto auto;
+    }
+    .header-name{
+        font-size: small;
+        margin-top: 40px;
+    }
+    .name-container{
+        grid-template-columns: auto;
+    }
+    .top-name h4{
+        margin-bottom: 7px;
+    }
+
+    /* __________________Sidebar_right_________________ */
+    .sidebar-right{
+        grid-template-rows: auto auto auto;
+        margin: 30px 10px 10px 10px;
+    }
+    .right-top button{
+        font-size: larger;
+    }
+    .right-center{
+        margin: 25px 0;
+    }
+    .header-right-center{
+        margin: 10px 5px;
+    }
+    .trending-profle span{
+        font-size: small;
+    }
+    .right-bottom{
+        margin-top: 10px;
+    }
+    .right-bottom-center{
+        gap: 10px;
+    }
 }
 
