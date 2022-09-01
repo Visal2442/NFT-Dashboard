@@ -513,7 +513,7 @@ main{
         gap: 10px;
     }
 }
-@media(max-width:370px){
+@media(max-width:395px){
     body{
         height: 50vh;
         grid-template-areas:"nav nav nav nav"
@@ -564,8 +564,8 @@ main{
     }
     .user{
         border-radius: 20px;
-        margin-right: 0;
-
+        padding-left: 13px;
+        margin: 0;
     }
     .creates .create{
         display: none;
