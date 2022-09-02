@@ -442,7 +442,6 @@ main{
         width: 120px;
     }
     .user{
-        background: none;
         border-radius: 20px;
         padding: 5px 10px;
         margin-right: 0;
@@ -454,7 +453,8 @@ main{
     .profile i{
         display: none;
     }
-            /* ______________Main________________________ */
+          
+    /* ______________Main________________________ */
     main{
         grid-area: main;
         padding: 0 20px;
@@ -516,76 +516,18 @@ main{
     }
 }
 
-/* _________________For Tablet_____________________- */
-@media(max-width: 890px){
-    body{
-        height: 100vh;
-        grid-template-areas:"sidebar-left nav nav nav"
-                            "sidebar-left main main main"
-                            "sidebar-right sidebar-right sidebar-right sidebar-right";
-        grid-template-rows: 1fr 3fr 1.5fr;
+
+@media(max-width: 390px){
+    .sidebar-left .left-center{
+        margin-right: 40px;
     }
 
-    /* ________________Sidebar-left___________________ */
-    .sidebar-left{
-        grid-template-rows: 0.4fr 3fr 1fr;
-        margin: 0;
-    }
-
-
-    /* __________________Navigation________________- */
-    nav{
-        margin-right: 20px;
-    }
-    input[type="date"],
-    input[type="time"]{
-        display: none;
-    }
+    /* ___________Naveigation______________ */
     input[type="search"]{
-        width: 360px;
+        width: 230px;
     }
-
-    /* ____________________Main__________________- */
-    main{
-        margin-top: 20px;
-    }
-    .type-collection .art,
-    .type-collection .picture,
-    .name-container .name:last-child{
-        display: none;
-    }
-    .header-botton span{
-        margin-right: 5px;
-    }
-    .name-container{
-        grid-template-columns: auto auto;
-        gap: 20px 70px;
-    }
-
-    /* ____________________Siderbar-right___________________ */
-    .sidebar-right{
-        grid-template-columns: auto auto;
-        grid-template-areas:"right-top right-center";
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-    .right-center{
-        margin: 0 15px 0 0;
-    }
-    .header-right-center{
-        margin: 0 0 10px 0;
-    }
-    .right-bottom{
-        display: none;
-    }
-}
-
-
-/* _________________For Ipad_________________- */
-@media(max-width: 840px){
-    /* ______________Navigation__________- */
-    nav{
-        margin-top: 15px;
+    .creates{
+        width: 65px;
     }
     .creates .create{
         display: none;
@@ -593,156 +535,80 @@ main{
     .creates .user{
         background: none;
     }
-    .creates{
-        width: 67px;
+
+    /* ____________Main___________________ */
+    .type-collection .button{
+        padding: 10px 20px;
     }
-    input[type="search"]{
-        width: 320px;
+    .header-name span:nth-child(2){
+        display: none;
+    }
+    .header-name span:first-child{
+        background: none;
+    }
+    .header-name h2{
+        font-size: 17px;
+    }
+    .day{
+        padding: 5px;
     }
 }
 
 
-
-
-/* ____________________For mobile__________________ */
-/* @media(max-width:395px){
+@media(max-width: 840px){
     body{
-        height: 50vh;
-        grid-template-areas:"nav nav nav nav"
-                            "main main main main"
-                            "sidebar-right sidebar-right sidebar-right sidebar-right"
-                            "sidebar-left sidebar-left sidebar-left sidebar-left";
-        grid-template-rows: auto auto auto auto;
-    } */
-    /* __________________Sidebar-left______________ */
-    /* .sidebar-left{
-        grid-template-columns: auto;
-        grid-template-rows: none;
-        margin: 0;
+        height: 100vh;
+        grid-template-areas:"sidebar-left nav nav nav"
+                            "sidebar-left main main main"
+                            "sidebar-left sidebar-right sidebar-right sidebar-right";
+        grid-template-rows: 1fr 1fr 0.5fr ;
     }
-    .left-top img,
-    .left-bottom img{
+
+    .sidebar-left{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr;
+        
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+    .creates{
+        width: 65px;
+    }
+    .creates .user{
+        background: none;
+    }
+    .creates .create{
         display: none;
     }
-    .left-center{
-        flex-direction: row;
-        margin: 10px 0 0 5px;
-        gap: 5%;
-    }
-    .left-center i{
-        font-size: 20px;
-    }
-    .nft h4,
-    .nft span,
-    .group-icon span,
-    .left-center h4{
+    .profile i{
         display: none;
-    } */
-    /* ____________Navigation___________________ */
-    /* nav{
-        margin: 15px 15px 0 5px;
     }
     input[type="date"],
     input[type="time"]{
         display: none;
     }
-    input[type="search"]{
-        width: 190px;
-        padding-left: 10px;
-    }
-    .creates{
-        font-size: smaller;
-        width: 120px;
-    }
-    .user{
-        border-radius: 20px;
-        padding-left: 13px;
-        margin: 0;
-    }
-    .creates .create{
-        display: none;
-    }
-    .profile{
-        display: flex;
-        align-items: center;
-    }
-    .profile i{
-        display: none;
+    /* input[type="search"]{
+        width: 400px;
     } */
-            /* ______________Main________________________ */
-    /* main{
-        grid-area: main;
-        padding: 0 20px;
-        margin-top: 25px;
-    }
-    .main-top{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .header-botton,
-    .type-collection{
-        font-size: smaller;
-    }
-    .type-collection .picture,
+    
+
+    /* _________Main________- */
     .type-collection .art,
-    .type-collection .trending{
-        display: none;
-    }
-    .button span{
-        margin: 0;
-    }
-    .type-collection .see-more img{
-        display: none;
-    }
-    .type-collection .see-more{
-        padding: 12px 20px;
-    }
-    .card-container{
-        grid-template-columns: auto auto;
-    }
-    .header-name{
-        font-size: small;
-        margin-top: 40px;
-    }
-    .day span:first-child{
-        background: none;
-        padding: 0;
-    }
-    .day span:nth-child(2){
+    .type-collection .picture{
         display: none;
     }
     .name-container{
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+        gap: 20px;
     }
-    .top-name h4{
-        margin-bottom: 7px;
-    } */
+    .name:last-child{
+        display: none;
+    }
 
-    /* __________________Sidebar_right_________________ */
-    /* .sidebar-right{
-        grid-template-rows: auto auto auto;
-        margin: 30px 10px 10px 10px;
-    }
-    .right-top button{
-        font-size: larger;
-    }
-    .right-center{
-        margin: 25px 0;
-    }
-    .header-right-center{
-        margin: 10px 5px;
-    }
-    .trending-profle span{
-        font-size: small;
-    }
-    .right-bottom{
-        margin-top: 10px;
-    }
-    .right-bottom-center{
-        gap: 10px;
-    }
-} */
+}
+
 
 
 
