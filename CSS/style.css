@@ -390,7 +390,6 @@ main{
     border-radius: 20px;
 }
 
-
 @media(max-width:450px){
     body{
         height: 50vh;
@@ -514,8 +513,6 @@ main{
         gap: 10px;
     }
 }
-
-
 @media(max-width:395px){
     body{
         height: 50vh;
@@ -654,8 +651,6 @@ main{
         gap: 10px;
     }
 }
-
-
 @media(max-width: 890px){
     body{
         height: 100vh;
@@ -716,6 +711,26 @@ main{
     }
     .right-bottom{
         display: none;
+    }
+}
+
+@media(max-width: 840px){
+
+    /* ______________Navigation__________- */
+    nav{
+        margin-top: 15px;
+    }
+    .creates .create{
+        display: none;
+    }
+    .creates .user{
+        background: none;
+    }
+    .creates{
+        width: 67px;
+    }
+    input[type="search"]{
+        width: 320px;
     }
 }
 
