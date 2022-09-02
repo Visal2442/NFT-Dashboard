@@ -403,8 +403,7 @@ main{
 
 
     .sidebar-left{
-        /* grid-template-rows: ; */
-        
+        grid-template-rows: ;
     }
     .sidebar-left .left-top{
         margin: 0;
