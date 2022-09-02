@@ -403,10 +403,17 @@ main{
 
 
     .sidebar-left{
-        grid-template-rows: ;
+        gap: 0;
     }
+
     .sidebar-left .left-top{
         margin: 0;
+    }
+    .left-center{
+        gap: 0;
+    }
+    .sidebar-left .left-bottom{
+        margin:0;
     }
 
     nav{
@@ -448,7 +455,7 @@ main{
 
 
     .sidebar-right{
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:"right-top right-center";
         grid-template-rows: 1fr 1fr;
         gap: 10px;
