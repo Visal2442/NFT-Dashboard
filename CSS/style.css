@@ -602,7 +602,7 @@ main{
 
 
 /* ____________________For mobile__________________ */
-@media(max-width:395px){
+/* @media(max-width:395px){
     body{
         height: 50vh;
         grid-template-areas:"nav nav nav nav"
@@ -610,9 +610,9 @@ main{
                             "sidebar-right sidebar-right sidebar-right sidebar-right"
                             "sidebar-left sidebar-left sidebar-left sidebar-left";
         grid-template-rows: auto auto auto auto;
-    }
+    } */
     /* __________________Sidebar-left______________ */
-    .sidebar-left{
+    /* .sidebar-left{
         grid-template-columns: auto;
         grid-template-rows: none;
         margin: 0;
@@ -634,9 +634,9 @@ main{
     .group-icon span,
     .left-center h4{
         display: none;
-    }
+    } */
     /* ____________Navigation___________________ */
-    nav{
+    /* nav{
         margin: 15px 15px 0 5px;
     }
     input[type="date"],
@@ -665,9 +665,9 @@ main{
     }
     .profile i{
         display: none;
-    }
+    } */
             /* ______________Main________________________ */
-    main{
+    /* main{
         grid-area: main;
         padding: 0 20px;
         margin-top: 25px;
@@ -714,10 +714,10 @@ main{
     }
     .top-name h4{
         margin-bottom: 7px;
-    }
+    } */
 
     /* __________________Sidebar_right_________________ */
-    .sidebar-right{
+    /* .sidebar-right{
         grid-template-rows: auto auto auto;
         margin: 30px 10px 10px 10px;
     }
@@ -739,7 +739,7 @@ main{
     .right-bottom-center{
         gap: 10px;
     }
-}
+} */
 
 
 
