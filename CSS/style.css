@@ -517,14 +517,14 @@ main{
 }
 
 
-@media(max-width: 390px){
+@media(max-width: 395px){
     .sidebar-left .left-center{
         margin-right: 40px;
     }
 
     /* ___________Naveigation______________ */
     input[type="search"]{
-        width: 230px;
+        width: 210px;
     }
     .creates{
         width: 65px;
@@ -540,7 +540,8 @@ main{
     .type-collection .button{
         padding: 10px 20px;
     }
-    .header-name span:nth-child(2){
+    .header-name span:nth-child(2),
+    .type-collection .see-more img{
         display: none;
     }
     .header-name span:first-child{
@@ -551,82 +552,6 @@ main{
     }
     .day{
         padding: 5px;
-    }
-}
-
-
-@media(max-width: 840px){
-    body{
-        /* height: 100vh; */
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:"sidebar-left nav"
-                            "sidebar-left main"
-                            "sidebar-left sidebar-right";
-        grid-template-rows: 1fr 1fr 0.5fr ;
-    }
-
-
-    .sidebar-left{
-        /* grid-template-rows: ; */
-        
-    }
-    .sidebar-left .left-top{
-        margin: 0;
-    }
-
-    nav{
-        margin-right: 20px;
-    }
-    .creates{
-        width: 65px;
-    }
-    .creates .user{
-        background: none;
-    }
-    .creates .create{
-        display: none;
-    }
-    .profile i{
-        display: none;
-    }
-    input[type="date"],
-    input[type="time"]{
-        display: none;
-    }
-    /* input[type="search"]{
-        width: 400px;
-    } */
-    
-
-    /* _________Main________- */
-    .type-collection .art,
-    .type-collection .picture{
-        display: none;
-    }
-    .name-container{
-        grid-template-columns: auto auto;
-        gap: 20px;
-    }
-    .name:last-child{
-        display: none;
-    }
-
-
-    .sidebar-right{
-        grid-template-columns: auto auto;
-        grid-template-areas:"right-top right-center";
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-
-    }
-    .right-bottom{
-        display: none;
-    }
-    .right-center{
-        margin: 0 10px 0 0;
-    }
-    .header-right-center{
-        margin: 0 0 10px 0;
     }
 }
 
