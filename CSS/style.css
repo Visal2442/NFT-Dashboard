@@ -391,6 +391,81 @@ main{
 }
 
 
+@media(max-width: 840px){
+    body{
+        /* height: 100vh; */
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:"sidebar-left nav"
+                            "sidebar-left main"
+                            "sidebar-left sidebar-right";
+        grid-template-rows: 1fr 1fr 0.5fr ;
+    }
+
+
+    .sidebar-left{
+        /* grid-template-rows: ; */
+        
+    }
+    .sidebar-left .left-top{
+        margin: 0;
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+    .creates{
+        width: 65px;
+    }
+    .creates .user{
+        background: none;
+    }
+    .creates .create{
+        display: none;
+    }
+    .profile i{
+        display: none;
+    }
+    input[type="date"],
+    input[type="time"]{
+        display: none;
+    }
+    /* input[type="search"]{
+        width: 400px;
+    } */
+    
+
+    /* _________Main________- */
+    .type-collection .art,
+    .type-collection .picture{
+        display: none;
+    }
+    .name-container{
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    .name:last-child{
+        display: none;
+    }
+
+
+    .sidebar-right{
+        grid-template-columns: auto auto;
+        grid-template-areas:"right-top right-center";
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+
+    }
+    .right-bottom{
+        display: none;
+    }
+    .right-center{
+        margin: 0 10px 0 0;
+    }
+    .header-right-center{
+        margin: 0 0 10px 0;
+    }
+}
+
 /* ___________For Mobile____________________- */
 @media(max-width:450px){
     body{
@@ -493,6 +568,10 @@ main{
 
     /* __________________Sidebar_right_________________ */
     .sidebar-right{
+        grid-template-columns: auto;
+        grid-template-areas: "right-top"
+                            "right-center"
+                            "right-bottom";
         grid-template-rows: auto auto auto;
         margin: 30px 10px 10px 10px;
     }
@@ -554,6 +633,7 @@ main{
         padding: 5px;
     }
 }
+
 
 
 
